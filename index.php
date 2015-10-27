@@ -21,9 +21,14 @@
     <section class="main-content">
       <h3>
 <a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
-
+<?php
+if(!empty($_POST['qustion']))
+{
+  echo $_POST['question'];
+}
+?>
 <h1> Enter a Question Here</h1>
-<form name='form' method='post' action="phpFile.php">
+<form name='form' method='post' action="POST">
   <input type="text" name="question">
   <input type="submit" value="submit">
 </form>
