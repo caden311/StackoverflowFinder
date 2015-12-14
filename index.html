@@ -35,7 +35,17 @@
 <a id="creating-pages-manually" class="anchor" href="#creating-pages-manually" aria-hidden="true"><span class="octicon octicon-link"></span></a>How does it work?</h3>
 
 <p>To solve this problem I used a basic AI approach - the Hill climb algorithm. This algorithm uses a score function to return a good result.  Not necessarily the best result, but one deemed well enough from the system. </p>
-<p>The site uses a number of tools to score the right answer and bring it right to you.  After asking a question we use Natural Language Processing to determine what's important about your questions. We then parse all tags related to the question; Such as languages, data-structures, and algorithms.  We then query stackoverflow for all related answers.  Based on that, we score all the given answers on a number of features; Including word occurances in the title and body, arragment of the words in order, if the answer contains code, tags occurences in the title and body, the question view count, the answer upvotes, if the answer was marked correct, as well as the length of the answer.  After these answers are all scored, the most relevant answer is returned.</p>
+<p>The site uses a number of tools to score the right answer and bring it right to you.  After asking a question we use Natural Language Processing to determine what's important about your questions. We then parse all tags related to the question; Such as languages, data-structures, and algorithms.  We then query stackoverflow for all related answers.  Based on that, we score all the given answers on a number of features like: </p>
+<ul>
+  <li>Including word occurances in the title and body</li>
+  <li>Arragment of the words in order</li>
+  <li>If the answer contains code</li>
+  <li>Tags occurences in the title and body</li>
+  <li>The question view count</li>
+  <li>If the answer was marked correct</li>
+  <li>As well as the length of the answer.</li>
+</ul>
+<p>>After these answers are all scored, the most relevant answer is returned.</p>
 <h6>Natural Language Processing visualized</h6>
 <img src="https://cloud.githubusercontent.com/assets/6799297/11536790/40e027f6-98d7-11e5-8d65-e1667f81b5e9.png" alt="NLP" style="width:661px;height:224px;">
 
